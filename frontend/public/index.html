@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cliente API - Frontend</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #f8f9fa;
+        padding-top: 50px;
+      }
+      .card {
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      pre {
+        background: #f1f3f5;
+        padding: 15px;
+        border-radius: 8px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #6c757d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mb-4">Nginx como Proxy</h1>
+
+      <div class="card p-4 mb-4">
+        <h5>Acciones disponibles</h5>
+        <div class="d-flex gap-3 mt-2">
+          <button id="btnHello" class="btn btn-primary">Enviar Saludo</button>
+          <button id="btnEcho" class="btn btn-success">Probar mensaje</button>
+        </div>
+      </div>
+
+      <div class="card p-4 mb-4">
+        <h5>Datos de Prueba</h5>
+        <textarea
+          id="payload"
+          class="form-control mt-2"
+          rows="5"
+        >{"nombre":"Andy","mensaje":"Hola desde frontend"}</textarea>
+      </div>
+
+      <div class="card p-4">
+        <h5>Respuesta del servidor</h5>
+        <pre id="output">Sin resultados aún</pre>
+      </div>
+
+      <footer class="mt-5">
+        <p><strong>Andy Rojop</strong> — Pagina Web</p>
+      </footer>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
