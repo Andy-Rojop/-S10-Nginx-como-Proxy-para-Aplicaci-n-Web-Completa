@@ -6,18 +6,16 @@
 ```
 git clone <url>
 cd Tarea_S10
-```
-
-* Navegar a backend
-  ejecutar
-  npm install
-  ejecuta
+Navegar a backend
+ejecutar
+npm install
+ejecuta
     docker-compose up --build
     Entra
 Link: http://localhost/8080
 
 Estructura de la carpeta
-```
+
 Tarea_S10/
 ├─ backend/
 │  ├─ package.json
@@ -32,7 +30,6 @@ Tarea_S10/
 ├─ nginx/
 │  └─ nginx.conf
 └─ docker-compose.yml
-
 ```
 
 ## Tecnologías

@@ -4,7 +4,6 @@ FROM node:20-alpine
 WORKDIR /app
 
 
-# Copia package.json y package-lock si existiera
 COPY package.json ./
 
 

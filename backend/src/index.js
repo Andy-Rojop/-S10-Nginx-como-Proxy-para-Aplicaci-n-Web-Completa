@@ -3,12 +3,12 @@ const cors = require('@fastify/cors');
 
 const fastify = Fastify({ logger: true });
 
-// Registrar CORS (sin opciones avanzadas, permitiendo todos los orígenes)
+
 fastify.register(cors, {
-  origin: true,            // permite reflejar el origen de la solicitud
-  methods: ['GET','POST','OPTIONS'],  // métodos permitidos
+  origin: true,           
+  methods: ['GET','POST','OPTIONS'],  
   allowedHeaders: ['Content-Type', 'Authorization'],
-  // puedes agregar otras opciones si necesitas
+
 });
 
 fastify.get('/api/hello', async (request, reply) => {

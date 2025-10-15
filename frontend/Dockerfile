@@ -1,8 +1,8 @@
-# Usamos nginx para servir archivos estáticos
+
 FROM nginx:alpine AS production
 
 
-# Borrar el contenido default
+
 RUN rm -rf /usr/share/nginx/html/*
 
 
